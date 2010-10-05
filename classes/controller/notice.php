@@ -31,7 +31,7 @@ class Controller_Notice extends Controller
 			Notices::add('info', 'Some notices can be very long. They shouldn\'t be in typical cases, but sometimes you just need a little extra room to provide information to the user. The CSS for notices allows this to happen much better than the previous version of the notices module. In fact, I think this version can display them very well&hellip; except for in Internet Exploder. It\'s sad that IE doesn\'t support rounded corners. Otherwise, it would be just as pretty. However, I didn get the gradients to work, so it\'s not too bad.');
 			Notices::add('message', 'Hey! I just wanted to send you a litle message.');
 			Notices::add('success', 'Congratulations! You are now an ultra, elite member!');
-			Notices::add('tip', 'Did you know that you can create persistent notices? Actually, this one is persistent. Go ahead and refresh the page. It won\'t go away until you click the "X".', TRUE);
+			Notices::add('tip', 'Did you know that you can create persistent notices? Actually, this one is persistent. Go ahead and refresh the page. It won\'t go away until you click the "X".', NULL, TRUE);
 			Notices::add('warning', 'The operation you have requested could potentially delete over 100 records. You are you sure you want to proceed? '.HTML::anchor('#', 'Yes').' or '.HTML::anchor('#', 'No'));
 			Notices::add('wizard', 'This is a demonstration of the notices module!');
 
