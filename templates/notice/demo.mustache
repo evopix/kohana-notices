@@ -4,9 +4,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Language" content="en-us" />
 		<title>Notices Demo</title>
-		<?php echo HTML::style('media/css/notices.css') ?>
-		<?php echo HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js') ?>
-		<?php echo HTML::script('media/js/notices.js') ?>
+		{{& notices_css}}
+		{{& jquery}}
+		{{& notices_js}}
 		<script type="text/javascript">
 			$(function(){
 				$('#add_notice').click(function(){
@@ -21,10 +21,10 @@
 	</head>
 	<body>
 		<h1>Notices Demo</h1>
-		<p>Number of notices in queue <em>before</em> display: <?php echo Notices::count() ?></p>
+		<p>Number of notices in queue <em>before</em> display: {{notices_count}}</p>
 
 		<div id="notices-container">
-			<?php echo Notices::display() ?>
+			{{& notices_display}}
 		</div>
 
 		<br />

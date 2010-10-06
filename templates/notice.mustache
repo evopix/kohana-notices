@@ -1,0 +1,15 @@
+{{#notice}}
+<div id="notice-{{hash}}" class="notice {{type}}{{persistent}}">
+	<div class="notice-image">
+		{{& image}}
+	</div>
+	<div class="notice-content">
+		<strong class="notice-type">{{type_formatted}}:</strong>
+		{{& message}}
+	</div>
+	<div class="notice-close">
+		{{& remove_link}}
+	</div>
+	<div class="notice-clear"></div>
+</div>
+{{/notice}}

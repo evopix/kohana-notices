@@ -17,7 +17,7 @@ class Controller_Notice extends Controller
 	{
 		if ($this->request->param('id', 'initialize') == 'display')
 		{
-			$this->request->response = View::factory('notices/demo');
+			$this->request->response = new View_Notice_Demo;
 		}
 		else
 		{

@@ -70,8 +70,8 @@ class Kohana_Notice
 	public function render()
 	{
 		$this->is_rendered = TRUE;
-		return View::factory('notices/notice')
-			->set('notice', $this)
+		return Kostache::factory('notice')
+			->set('_notice', $this)
 			->render();
 	}
 
